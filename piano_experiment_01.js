@@ -18,9 +18,11 @@ const lead = "gm_trombone:5"
 
 
 
-$: n(irand(7).rib(irand(20), 2).add(12)
-   .struct("1 1 1 <[1 1 1] [1 1] [0 0 1 0 1 0]>"))
+
+$: n(irand(8).add(12).scale("minor")
+   .struct("<0@.25 0.125> <1@2 1 1@.5> 1@.6 1@1.9 1 <1@1 1 1@2>"))
    .scale(lofi)
+   
    .piano()
    .room(1)
    ._pianoroll()
