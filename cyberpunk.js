@@ -29,8 +29,8 @@ arp: note("<[d5 a5 a#5 d6]*4 [[d5 a5 a#5 f6] [d5 a5 a#5 e6]] * 2 >")
 setCpm(90/4)
 
 const kick = s("bd!4:6").duckorbit(2).duckattack(.25)
-const snare = s("- sd:4 - sd:4")
-const hh = s("hh!8:1").orbit(2).gain(.4)
+const snare = s("- sd:4 - sd:4").gain(.2)
+const hh = s("hh!15:1").orbit(2).gain(.5)
 
 drums: stack(snare, kick, hh )._scope()
 
